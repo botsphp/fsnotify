@@ -109,3 +109,7 @@ func (e *FileEvent) String() string {
 
 	return fmt.Sprintf("%q: %s", e.Name, events)
 }
+
+func (e *FileEvent) GetFile() string {
+	return e.Name
+}
